@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardiac Pacemakers Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Cardiac Pacemakers: Design, Functionality, and Safety</h1>
+        <p class="subtitle">A Biomedical Engineering Portfolio</p>
+    </div>
+</header>
+
+<main class="container">
+    <section class="card">
+        <h2>1. Evolution and Types of Pacemakers</h2>
+        <p>Cardiac pacemakers have evolved from bulky external devices to today’s compact, implantable technologies. Early pacemakers required constant external power, while modern models use long-life lithium batteries and advanced circuitry.</p>
+        <h3>Evolution of Pacemakers</h3>
+        <ul>
+            <li><strong>1930s–1940s: Early Experiments</strong> – First artificial pacing attempts were external, bulky devices delivering shocks through electrodes placed on the chest. In 1932, Dr. Albert Hyman introduced the term “artificial pacemaker” with his hand-cranked external device.</li>
+            <li><strong>1950s: First Implantable Pacemakers</strong> – In 1958, the first fully implantable pacemaker was developed by Rune Elmqvist and Åke Senning in Sweden, implanted in a patient with heart block. Early devices were powered by rechargeable nickel-cadmium batteries, requiring frequent recharging.</li>
+            <li><strong>1960s–1970s: Battery and Circuit Improvements</strong> – Introduction of mercury-zinc and lithium-iodide batteries extended lifespan. Transistor technology reduced device size.</li>
+            <li><strong>1980s–1990s: Programmable and Dual-Chamber Devices</strong> – Microprocessors enabled programmable settings. Dual-chamber pacemakers paced both atria and ventricles, improving cardiac synchronization.</li>
+            <li><strong>2000s–present: Advanced and Leadless Pacemakers</strong> – Rate-responsive pacemakers adjust heart rate based on physical activity. Leadless pacemakers, such as Medtronic Micra, eliminate the need for leads, reducing complications. MRI-compatible pacemakers allow safe imaging.</li>
+        </ul>
+        <h3>Types of Pacemakers</h3>
+        <ul>
+            <li><strong>Single-Chamber Pacemaker:</strong> Contains one lead placed in either the right atrium or right ventricle.</li>
+            <ul>
+                <li><strong>Use Case:</strong> Suitable for patients with atrial fibrillation with slow ventricular response or sinus node dysfunction.</li>
+                <li><strong>Pros:</strong> Simple implantation. Fewer complications.</li>
+                <li><strong>Cons:</strong> Limited ability to maintain atrioventricular (AV) synchrony.</li>
+            </ul>
+            <li><strong>Dual-Chamber Pacemaker:</strong> Has two leads—one in the right atrium and one in the right ventricle.</li>
+            <ul>
+                <li><strong>Use Case:</strong> Used in patients with AV block or sick sinus syndrome.</li>
+                <li><strong>Pros:</strong> Maintains AV synchrony, improving cardiac efficiency. Reduces risk of atrial fibrillation.</li>
+                <li><strong>Cons:</strong> Slightly more complex surgery. Higher chance of lead-related complications.</li>
+            </ul>
+        </ul>
+        <button onclick="toggleDiagram('types')">Show Block Diagram</button>
+        <div id="typesDiagram" class="diagram">
+            <img src="hellp.png" alt="Pacemaker Types Diagram">
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>2. Electrical Safety in Pacemaker Use</h2>
+        <p>Electrical safety is crucial to prevent device malfunction or patient injury. Pacemakers use hermetically sealed titanium casings for insulation, protection from body fluids, and electromagnetic interference (EMI) shielding. Safety features include:</p>
+        <ul>
+            <li><strong>Low Leakage Currents:</strong> Minimizes risk of electric shock.</li>
+            <li><strong>EMI Protection:</strong> Shields from external electromagnetic fields (e.g., MRI machines, cell phones).</li>
+            <li><strong>Battery and Lead Monitoring:</strong> Alerts when battery depletion or lead fracture occurs.</li>
+            <li><strong>Lead Insulation:</strong> Pacemaker leads are insulated to prevent current leakage and reduce the risk of tissue burns or unintended stimulation.</li>
+            <li><strong>Output Voltage and Current Control:</strong> Pacemakers deliver very small electrical impulses (typically 1–5 volts) with carefully controlled pulse width and amplitude to stimulate heart muscle safely.</li>
+            <li><strong>Sensing and Inhibition:</strong> The device senses intrinsic heart activity; if a natural beat is detected, it inhibits its own output to avoid competing electrical signals.</li>
+            <li><strong>Protection Against Electromagnetic Interference (EMI):</strong> Devices have shielding and filters to protect against EMI from mobile phones, MRI, electrical equipment, and surgical instruments like electrocautery.</li>
+            <li><strong>Battery Monitoring and End-of-Life Indication:</strong> Modern pacemakers continuously monitor battery status and alert clinicians before battery depletion.</li>
+            <li><strong>Grounding and Isolation:</strong> Pacemaker programming devices and hospital equipment use isolated circuits to avoid delivering dangerous currents through the patient.</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>3. Regulatory and Safety Standards</h2>
+        <p>Pacemakers must meet strict international standards to ensure safety, efficacy, and biocompatibility:</p>
+        <h3>🔹 Regulatory Authorities</h3>
+        <ul>
+            <li><strong>FDA (U.S.):</strong> Classifies pacemakers as Class III devices, requiring premarket approval (PMA).</li>
+            <li><strong>CE Mark (Europe):</strong> Devices must comply with Medical Device Regulation (MDR) for safety and performance.</li>
+            <li><strong>ISO Standards:</strong> International benchmarks for manufacturing and safety.</li>
+        </ul>
+        <h3>🔹 Key Safety Standards</h3>
+        <ul>
+            <li><strong>ISO 14708:</strong> Specifies performance requirements, tests, and safety for implantable cardiac pacemakers.</li>
+            <li><strong>IEC 60601-1:</strong> General standard for medical electrical equipment safety.</li>
+            <li><strong>AAMI/ANSI Standards:</strong> U.S. performance and testing guidelines, often aligned with international norms.</li>
+        </ul>
+        <h3>🔹 Documentation and Traceability</h3>
+        <ul>
+            <li><strong>Design and Manufacturing Records:</strong> Manufacturers must maintain detailed design, manufacturing, and testing records.</li>
+            <li><strong>Unique Device Identification (UDI):</strong> Ensures traceability from factory to patient.</li>
+        </ul>
+        <h3>🔹 Post-market Surveillance</h3>
+        <ul>
+            <li>Companies and health authorities monitor devices after release for adverse events, recalls, or improvements.</li>
+        </ul>
+    </section>
+<section>
+    <iframe
+    src="https://www.chatbase.co/chatbot-iframe/bf9trnCBtqhEdOXMwgmYN"
+    width="100%"
+    style="height: 30%; min-height: 400px"
+    frameborder="0"
+></iframe>
+</section>
+    <section class="card">
+        <h2>4. Safety Testing and Validation</h2>
+        <p>Before release, pacemakers undergo rigorous testing:</p>
+        <ul>
+            <li><strong>Design Verification Testing:</strong> Confirms the design meets specified requirements. Includes electrical output tests, battery longevity tests, and mechanical stress testing.</li>
+            <li><strong>Biocompatibility Testing:</strong> Ensures materials used are non-toxic, non-carcinogenic, and do not trigger immune reactions.</li>
+            <li><strong>Electromagnetic Compatibility (EMC) Testing:</strong> Checks resilience to external electromagnetic fields and ensures no harmful emissions.</li>
+            <li><strong>Accelerated Life Testing:</strong> Simulates long-term use in a shorter period to predict lifespan and identify potential failures.</li>
+            <li><strong>Sterilization Validation:</strong> Confirms the device can withstand sterilization processes (for leaded systems) without damage.</li>
+            <li><strong>Final Product Testing:</strong> 100% of manufactured pacemakers undergo individual functional testing before packaging.</li>
+            <li><strong>Clinical Validation:</strong> Performed through carefully controlled human studies (IDE trials under FDA, CE clinical investigations) to ensure efficacy and safety in real patients.</li>
+            <li><strong>Software Validation:</strong> If the pacemaker contains software, rigorous testing under IEC 62304 guidelines is conducted to verify algorithm accuracy and reliability.</li>
+        </ul>
+        <button onclick="toggleDiagram('testing')">Show Testing Flowchart</button>
+        <div id="testingDiagram" class="diagram">
+            <img src="analysis.png" alt="Testing Flowchart">
+        </div>
+    </section>
+    <section class="card">
+        <h2>5. Video: Understanding Pacemakers</h2>
+        <p>Watch this video to gain a deeper understanding of how pacemakers work and their impact on patients' lives:</p>
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/53_jyoA47Fk?si=Bue39Q0pRG2jC2Nw" 
+                title="YouTube video player" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2025 Biomedical Engineering Portfolio | Designed with ❤️ by Anushka </p>
+    </div>
+</footer>
+<script>
+    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="bf9trnCBtqhEdOXMwgmYN";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script>
+<script src="script.js"></script>
+</body>
+</html>
